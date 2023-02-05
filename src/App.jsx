@@ -12,14 +12,16 @@ function App() {
       <Router>
         <div className='app'>
           <Navbar />
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/experience' element={<Experience />} />
-            <Route path='/skills' element={<Skills />} />
-            <Route path='/interest' element={<Interest />} />
-            <Route path='/awards' element={<Awards />} />
-          </Routes>
+          <div className='app-content'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/experience' element={<Experience />} />
+              <Route path='/skills' element={<Skills />} />
+              <Route path='/interest' element={<Interest />} />
+              <Route path='/awards' element={<Awards />} />
+            </Routes>
+          </div>
         </div>
       </Router>
     </>
